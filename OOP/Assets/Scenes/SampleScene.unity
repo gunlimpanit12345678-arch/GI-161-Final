@@ -163,11 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c18575bcea5a6f4d87adeaa3aaa1f9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwordController
-  prefab: {fileID: 1355564750305943516, guid: 15aeae9625850ed429bf24e17e2df6d6, type: 3}
-  damage: 0
-  speed: 10
-  cooldownDuration: 2
-  pierce: 0
+  weaponData: {fileID: 11400000, guid: 8eaf76f2f927ac541843abc80faa9330, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,7 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49bea9fb9c648d47b4240e25e4d86ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemeyMovement
-  moveSpeed: 2
+  enemyData: {fileID: 0}
 --- !u!1 &1748038839
 GameObject:
   m_ObjectHideFlags: 0

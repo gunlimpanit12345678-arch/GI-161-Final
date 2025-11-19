@@ -11,7 +11,7 @@ public class SwordController : WeaponController
     protected override void Attack()
     {
         base.Attack();
-        GameObject spawnedSword = Instantiate(prefab);
+        GameObject spawnedSword = Instantiate(weaponData.Prefab);
         spawnedSword.transform.position = transform.position ;
         spawnedSword.GetComponent<Swordbehaviour>().DirectionChecker(pm.lastMovedVector);
     }

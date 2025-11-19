@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 7643495299857298376}
   - component: {fileID: 3818085155262473825}
   - component: {fileID: 5354630278424190892}
+  - component: {fileID: -9106344732217619642}
+  - component: {fileID: -2148222370124539357}
   m_Layer: 0
   m_Name: chick
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,3 +162,29 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.75, y: 0.625}
   m_EdgeRadius: 0
+--- !u!114 &-9106344732217619642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3687043277889129251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49bea9fb9c648d47b4240e25e4d86ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemeyMovement
+  enemyData: {fileID: 11400000, guid: a1f1d374df314f543ae1df32722bcbf9, type: 2}
+--- !u!114 &-2148222370124539357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3687043277889129251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0481d57f4bd0c43ab7e58c2aa2c7b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemeStats
+  enemyData: {fileID: 11400000, guid: a1f1d374df314f543ae1df32722bcbf9, type: 2}
