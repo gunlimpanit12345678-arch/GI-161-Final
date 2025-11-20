@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5354630278424190892}
   - component: {fileID: -9106344732217619642}
   - component: {fileID: -2148222370124539357}
+  - component: {fileID: -6138148702444703552}
   m_Layer: 0
   m_Name: chick
   m_TagString: Enemy
@@ -188,3 +189,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemeStats
   enemyData: {fileID: 11400000, guid: a1f1d374df314f543ae1df32722bcbf9, type: 2}
+--- !u!114 &-6138148702444703552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3687043277889129251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73d4ced32c9e80e49a33a05e78f3762a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DropRateManager
+  drops:
+  - name: Blue Gem
+    itemPrefab: {fileID: 6779171488458106080, guid: f21fc9d29014f9440b743d75a65ebc5f, type: 3}
+    dropRate: 50

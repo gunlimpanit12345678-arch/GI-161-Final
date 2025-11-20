@@ -1,28 +1,54 @@
 using UnityEngine;
-[CreateAssetMenu(fileName ="CharacterScriptableObject",menuName = "ScriptableObject/Character")]
+
+[CreateAssetMenu(fileName = "CharacterScriptableObject", menuName = "ScriptableObject/Character")]
 public class CharacterScriptableObjects : ScriptableObject
 {
     [SerializeField]
-    GameObject startingWeapon;
-    public GameObject StartingWeapon {  get=>StartingWeapon; private set => StartingWeapon = value; }
+    private GameObject startingWeapon;
+    public GameObject StartingWeapon
+    {
+        get => startingWeapon;
+        private set => startingWeapon = value;
+    }
 
     [SerializeField]
-    float maxHealth;
-    public float MaxHealth { get => MaxHealth; private set => MaxHealth = value; }
+    private float maxHealth;
+    public float MaxHealth
+    {
+        get => maxHealth;
+        private set => maxHealth = value;
+    }
 
     [SerializeField]
-    float recovery;
-    public float Recovery { get => Recovery; private set => Recovery = value; }
+    private float recovery;
+    public float Recovery
+    {
+        get => recovery;
+        private set => recovery = value;
+    }
 
     [SerializeField]
-    float moveSpeed;
-    public float MoveSpeed { get => MoveSpeed; private set => MoveSpeed = value; }
+    private float moveSpeed;
+    public float MoveSpeed
+    {
+        get => moveSpeed;
+        private set => moveSpeed = value;
+    }
 
     [SerializeField]
-    float might;
-    public float Might { get => Might; private set => Might = value; }
+    private float might;
+    public float Might
+    {
+        get => might;
+        private set => might = value;
+    }
 
     [SerializeField]
-    float projectileSpeed;
-    public float ProjectileSpeed { get => projectileSpeed; private set => projectileSpeed = value; }
+    private float projectileSpeed;
+    public float ProjectileSpeed
+    {
+        get => projectileSpeed;
+        private set => projectileSpeed = value;
+    }
 }
+

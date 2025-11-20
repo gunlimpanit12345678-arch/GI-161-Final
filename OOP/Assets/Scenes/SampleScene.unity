@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 531789911}
   - component: {fileID: 531789910}
   - component: {fileID: 531789912}
+  - component: {fileID: 531789913}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -554,6 +555,19 @@ MonoBehaviour:
   level: 1
   experienceCap: 100
   experienceCapIncrease: 100
+  invincibilityDuration: 0.5
+--- !u!114 &531789913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531789904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a21e785c612c3d4989b4ea1c1862c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollector
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,11 +798,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4007549385947841947, guid: e9ec0fb31e28dc2409296b0db74911b5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.88
       objectReference: {fileID: 0}
     - target: {fileID: 4007549385947841947, guid: e9ec0fb31e28dc2409296b0db74911b5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.83
       objectReference: {fileID: 0}
     - target: {fileID: 4007549385947841947, guid: e9ec0fb31e28dc2409296b0db74911b5, type: 3}
       propertyPath: m_LocalPosition.z
