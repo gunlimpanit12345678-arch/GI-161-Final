@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float movespeed;
-    Rigidbody2D rb;
+    
     [HideInInspector]
     public float lastHorizontalVector;
     [HideInInspector]
@@ -13,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public Vector2 lastMovedVector;
 
+    Rigidbody2D rb;
+    public CharacterScriptableObjects characterData;
     
     void Start()
     {
@@ -53,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Move() 
     {
-        rb.velocity = new Vector2(moveDir.x * movespeed, moveDir.y * movespeed); 
+        rb.velocity = new Vector2(moveDir.x * characterData.MoveSpeed, moveDir.y * characterData.MoveSpeed); 
     }
 
 

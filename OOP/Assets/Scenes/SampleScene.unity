@@ -331,6 +331,7 @@ GameObject:
   - component: {fileID: 531789907}
   - component: {fileID: 531789911}
   - component: {fileID: 531789910}
+  - component: {fileID: 531789912}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -424,11 +425,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d2e320e41bd9e47b90025cace4d0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  movespeed: 5
   lastHorizontalVector: 0
   lastVerticalVector: 0
   moveDir: {x: 0, y: 0}
   lastMovedVector: {x: 0, y: 0}
+  characterData: {fileID: 11400000, guid: f9d32add011b0474a83de5f771eddd34, type: 2}
 --- !u!61 &531789908
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -536,6 +537,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ddcf7c9a12a7c48b8b80564a2b7cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
+--- !u!114 &531789912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531789904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6699332d0d30a849a80d631ae3ec6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  characterData: {fileID: 11400000, guid: f9d32add011b0474a83de5f771eddd34, type: 2}
+  experience: 0
+  level: 1
+  experienceCap: 100
+  experienceCapIncrease: 100
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
