@@ -8,11 +8,27 @@ public class EnemeStats : MonoBehaviour
     float currentHealth;
     float currentDamage;
 
+    public float deSpawnDistance = 20f;
+    Transform player;
+
     private void Awake()
     {
         currentMoveSpeed = enemyData.MoveSpeed;
         currentHealth = enemyData.MaxHealth;
         currentDamage = enemyData.Damage;
+    }
+
+    void Start()
+    {
+     player = FindObjectOfType<PlayerStats>().transform;   
+    }
+
+     void Update()
+    {
+        if (Vector2.Distance(transform.position, player.position) >= deSpawnDistance)
+        {
+
+        }
     }
 
     public void TakeDamage(float dmg) 
@@ -34,5 +50,17 @@ public class EnemeStats : MonoBehaviour
             PlayerStats player = col.gameObject.GetComponent<PlayerStats>();
             player.TakeDamage(currentDamage);
         }
+    }
+
+    private void OnDestroy()
+    {
+        EnemySpawner es = FindObjectOfType<EnemySpawner>();
+        es.OnEnemyKilled();
+    }
+
+    void ReturnEnemy()
+    {
+        EnemySpawner es = FindObjectOfType<EnemySpawner>();
+        transform.position = player.position + es.relativeSpawnerPoints[Random.Range(0,es.relativeSpawnerPoints.Count)].position;
     }
 }
