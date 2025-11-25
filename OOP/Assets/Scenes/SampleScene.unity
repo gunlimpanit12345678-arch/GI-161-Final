@@ -175,10 +175,48 @@ MonoBehaviour:
     waveQuota: 3
     spawnInterval: 1
     spawnCount: 3
+  - waveName: 
+    enemyGroups:
+    - enemyName: Chick
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefabs: {fileID: 3687043277889129251, guid: e9ec0fb31e28dc2409296b0db74911b5, type: 3}
+    - enemyName: Red Chick
+      enemyCount: 2
+      spawnCount: 0
+      enemyPrefabs: {fileID: 3687043277889129251, guid: b17cbe360567a8d478314fd40dda92c7, type: 3}
+    waveQuota: 3
+    spawnInterval: 1
+    spawnCount: 3
+  - waveName: 
+    enemyGroups:
+    - enemyName: Chick
+      enemyCount: 2
+      spawnCount: 0
+      enemyPrefabs: {fileID: 3687043277889129251, guid: e9ec0fb31e28dc2409296b0db74911b5, type: 3}
+    - enemyName: Red Chick
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefabs: {fileID: 3687043277889129251, guid: b17cbe360567a8d478314fd40dda92c7, type: 3}
+    waveQuota: 3
+    spawnInterval: 1
+    spawnCount: 3
+  - waveName: 
+    enemyGroups:
+    - enemyName: Chick
+      enemyCount: 1
+      spawnCount: 0
+      enemyPrefabs: {fileID: 3687043277889129251, guid: e9ec0fb31e28dc2409296b0db74911b5, type: 3}
+    - enemyName: Red Chick
+      enemyCount: 4
+      spawnCount: 0
+      enemyPrefabs: {fileID: 3687043277889129251, guid: b17cbe360567a8d478314fd40dda92c7, type: 3}
+    waveQuota: 3
+    spawnInterval: 1
+    spawnCount: 3
   currentWaveCount: 0
   enemiesAlive: 0
   maxEnemiesAllowed: 5
-  maxEnemiesReached: 0
   waveInterval: 3
   relativeSpawnerPoints:
   - {fileID: 607166329}
@@ -705,7 +743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6699332d0d30a849a80d631ae3ec6a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
-  characterData: {fileID: 11400000, guid: f9d32add011b0474a83de5f771eddd34, type: 2}
   experience: 0
   level: 1
   experienceCap: 100
