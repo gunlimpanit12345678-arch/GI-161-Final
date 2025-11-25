@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public CharacterScriptableObjects characterData;
+     CharacterScriptableObjects characterData;
 
     float currentHealth;
     float currentRecovery;
@@ -25,6 +25,8 @@ public class PlayerStats : MonoBehaviour
         currentMoveSpeed = characterData.MoveSpeed;
         currentMight = characterData.Might;
         currentProjectileSpeed = characterData.ProjectileSpeed;
+
+        CharactorSelect.instance.DestroySingleton();
     }
     [Header("I-Frames")]
     public float invincibilityDuration;
