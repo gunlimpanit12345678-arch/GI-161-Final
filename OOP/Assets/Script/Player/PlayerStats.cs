@@ -10,6 +10,17 @@ public class PlayerStats : MonoBehaviour
     float currentMight;
     float currentProjectileSpeed;
 
+    public float CurrenHealth
+    { get { return currentHealth; } 
+    set {if (currentHealth != value)
+            {
+              currentHealth = value;
+            } 
+        }
+    
+    }
+
+
     [Header("Experience/Level")]
     public int experience = 0;
     public int level = 1;
