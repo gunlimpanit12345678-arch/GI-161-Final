@@ -299,6 +299,10 @@ MonoBehaviour:
       enemyCount: 2
       spawnCount: 0
       enemyPrefabs: {fileID: 3687043277889129251, guid: b17cbe360567a8d478314fd40dda92c7, type: 3}
+    - enemyName: Gold Chick
+      enemyCount: 2
+      spawnCount: 0
+      enemyPrefabs: {fileID: 3687043277889129251, guid: a7a78180873239243b56dd7bf5513ebe, type: 3}
     waveQuota: 3
     spawnInterval: 1
     spawnCount: 3
@@ -310,6 +314,23 @@ MonoBehaviour:
       enemyPrefabs: {fileID: 3687043277889129251, guid: e9ec0fb31e28dc2409296b0db74911b5, type: 3}
     - enemyName: Red Chick
       enemyCount: 3
+      spawnCount: 0
+      enemyPrefabs: {fileID: 3687043277889129251, guid: b17cbe360567a8d478314fd40dda92c7, type: 3}
+    - enemyName: Gold Chick
+      enemyCount: 3
+      spawnCount: 0
+      enemyPrefabs: {fileID: 3687043277889129251, guid: a7a78180873239243b56dd7bf5513ebe, type: 3}
+    waveQuota: 3
+    spawnInterval: 1
+    spawnCount: 3
+  - waveName: 
+    enemyGroups:
+    - enemyName: Chick
+      enemyCount: 1
+      spawnCount: 0
+      enemyPrefabs: {fileID: 3687043277889129251, guid: e9ec0fb31e28dc2409296b0db74911b5, type: 3}
+    - enemyName: Red Chick
+      enemyCount: 4
       spawnCount: 0
       enemyPrefabs: {fileID: 3687043277889129251, guid: b17cbe360567a8d478314fd40dda92c7, type: 3}
     waveQuota: 3
@@ -325,6 +346,10 @@ MonoBehaviour:
       enemyCount: 4
       spawnCount: 0
       enemyPrefabs: {fileID: 3687043277889129251, guid: b17cbe360567a8d478314fd40dda92c7, type: 3}
+    - enemyName: Gold Chick
+      enemyCount: 4
+      spawnCount: 0
+      enemyPrefabs: {fileID: 3687043277889129251, guid: a7a78180873239243b56dd7bf5513ebe, type: 3}
     waveQuota: 3
     spawnInterval: 1
     spawnCount: 3
