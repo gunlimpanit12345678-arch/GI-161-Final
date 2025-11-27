@@ -189,6 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemeStats
   enemyData: {fileID: 11400000, guid: 56d6553ab7076304b837ac8f5bcd6a96, type: 2}
+  deSpawnDistance: 20
 --- !u!114 &-6138148702444703552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,4 +205,4 @@ MonoBehaviour:
   drops:
   - name: Blue Gem
     itemPrefab: {fileID: 6779171488458106080, guid: f21fc9d29014f9440b743d75a65ebc5f, type: 3}
-    dropRate: 50
+    dropRate: 40
